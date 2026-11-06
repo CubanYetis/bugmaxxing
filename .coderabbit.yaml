@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
 language: "en-US"
 reviews:
-  profile: "chill"
+  profile: "assertive"
   auto_approvals:
     enabled: false
   high_level_summary: true
