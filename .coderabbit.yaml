@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+reviews:
+  profile: "assertive"
+  auto_approvals:
+    enabled: false
+  high_level_summary: true
+  poem: true
+  review_status: true
+  review_details: false
+  auto_review:
+    enabled: true
+    drafts: false
+  path_instructions:
+    - path: "api/src/auth/**"
+      instructions: |
+        - Check that any data derived from the request itself is validated against configured values
+        - Check that the key read after the redirect matches the value saved before it
+        - Ensure that a new gate doesn't break existing config options
+chat:
+  auto_reply: true
